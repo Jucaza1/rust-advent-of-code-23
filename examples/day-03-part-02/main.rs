@@ -3,7 +3,7 @@ use std::{
 };
 
 fn main() {
-    let file = File::open("./examples/day-03-part-01/input.txt").expect("file not found");
+    let file = File::open("./examples/day-03-part-02/input.txt").expect("file not found");
     let buf = BufReader::new(file);
     // let mut acc = 0;
     let mut mat: Vec<Vec<char>> = Vec::new();
@@ -16,6 +16,7 @@ fn main() {
     let result = process_matrix(mat);
     println!("Result -> {result:}");
 }
+
 #[derive(Debug, Eq, PartialEq, Hash)]
 struct Point(usize,usize);
 
